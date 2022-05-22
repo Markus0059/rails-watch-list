@@ -11,6 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar-lewagon navbar-collapse">
+      <%= link_to root_path do %>
+        <%= image_tag "popcorn.jpg", alt: "alttext", class: "logo" %>
+      <% end %>
+      <%= link_to " All my lists ", root_path, class: "button-navbar"%>
+      <%= link_to " New list ", new_list_path, class: "button-navbar"%>
+    </div>
+      <%= yield %>
+
   </body>
 </html>
