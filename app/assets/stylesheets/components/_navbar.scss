@@ -1,7 +1,10 @@
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
   background: rgb(0, 0, 0);
   text-decoration: none;
+  position: fixed;
+  width: 100%;
 
   &:hover {
     text-decoration: none;
